@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import { SectionId } from '../types';
 import { BUSINESS_INFO } from '../constants';
 
@@ -41,9 +42,13 @@ const Navbar: React.FC = () => {
           onClick={() => scrollTo(SectionId.HOME)} 
           className="flex items-center gap-2 cursor-pointer"
         >
-          <div className="bg-brand-gold p-2 rounded-full">
-            <Leaf className="text-white w-6 h-6" />
-          </div>
+          <Image 
+            src="https://res.cloudinary.com/dltfsttr7/image/upload/v1764277189/Almallibre_aoneqf.jpg"
+            alt="Alma Libre Logo"
+            width={40}
+            height={40}
+            className="rounded-full object-cover"
+          />
           <span className={`font-serif text-2xl font-bold ${scrolled ? 'text-brand-green' : 'text-brand-green md:text-white'}`}>
             {BUSINESS_INFO.name}
           </span>

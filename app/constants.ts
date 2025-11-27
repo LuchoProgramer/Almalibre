@@ -4,10 +4,10 @@ export const BUSINESS_INFO = {
   name: "Alma Libre",
   slogan: "Tu cuerpo se relaja, tu alma se libera",
   address: "Barrio La Josefina, Cerca a Carcelén Alto, Quito",
-  phone: "+593 99 999 9999", // Placeholder
+  phone: "+593 96 272 1748",
   hours: "Lun - Sab: 9:00 - 19:00 | Dom: Bajo Cita",
-  whatsappLink: "https://wa.me/593999999999", // Placeholder
-  mapLink: "https://goo.gl/maps/placeholder"
+  whatsappLink: "https://wa.me/593962721748",
+  mapLink: "https://maps.app.goo.gl/9vrzBsmpJ6HDUQoe9"
 };
 
 export const SERVICES: Service[] = [
