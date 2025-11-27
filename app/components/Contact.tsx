@@ -70,10 +70,10 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Map (Placeholder) */}
+          {/* Map */}
           <div className="h-full min-h-[400px] bg-gray-200 rounded-3xl overflow-hidden relative shadow-inner">
              <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.27092928623!2d-78.4756858!3d-0.0987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58564b1509a25%3A0x10f7636e0d37e193!2sCarcel%C3%A9n%20Alto%2C%20Quito!5e0!3m2!1sen!2sec!4v1700000000000!5m2!1sen!2sec" 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.814210722443!2d-78.4751374!3d-0.08223599999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5859c853ec08b%3A0xedd1ce6f9d7cc3f7!2sBienestar%20Alma%20Libre%20%7C%20Carcelen!5e0!3m2!1sen!2sec!4v1764276505833!5m2!1sen!2sec" 
                width="100%" 
                height="100%" 
                style={{border:0}} 
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                className="grayscale hover:grayscale-0 transition-all duration-500"
              ></iframe>
              <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg text-xs text-gray-500">
-               Barrio La Josefina
+               Bienestar Alma Libre | Carcelén
              </div>
           </div>
 
