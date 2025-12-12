@@ -11,11 +11,11 @@ export default function HomePage() {
   return (
     <div className="min-h-screen font-sans text-gray-800 bg-white selection:bg-brand-gold selection:text-white">
       <Navbar />
-      
+
       <main>
         <Hero />
-        <Services />
         <About />
+        <Services />
         <Contact />
       </main>
 

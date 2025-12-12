@@ -22,13 +22,13 @@ const Services: React.FC = () => {
           {SERVICES.map((service) => (
             <div key={service.id} className="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow border border-brand-water/30">
               <div className="h-48 overflow-hidden relative">
-                <img 
-                  src={service.image} 
-                  alt={service.name} 
+                <img
+                  src={service.image}
+                  alt={service.name}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-brand-green font-bold shadow-sm">
-                  ${service.price}
+                  {typeof service.price === 'number' ? `$${service.price}` : service.price}
                 </div>
               </div>
               <div className="p-6">
@@ -50,7 +50,7 @@ const Services: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                <button 
+                <button
                   onClick={() => document.getElementById(SectionId.CONTACT)?.scrollIntoView({ behavior: 'smooth' })}
                   className="w-full bg-brand-green text-brand-lightGold py-3 rounded-lg font-bold hover:bg-brand-gold hover:text-white transition-colors uppercase tracking-wide text-sm"
                 >

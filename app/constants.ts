@@ -3,67 +3,69 @@ import { Service, Testimonial } from './types';
 export const BUSINESS_INFO = {
   name: "Alma Libre",
   slogan: "Tu cuerpo se relaja, tu alma se libera",
-  address: "Barrio La Josefina, Cerca a Carcelén Alto, Quito",
+  address: "La Josefina, calle Principal Ambar y Pasaje Jade, Carcelén, Quito",
   phone: "+593 96 272 1748",
   hours: "Lun - Sab: 9:00 - 19:00 | Dom: Bajo Cita",
-  whatsappLink: "https://wa.me/593962721748",
-  mapLink: "https://maps.app.goo.gl/9vrzBsmpJ6HDUQoe9"
+  whatsappLink: "https://wa.me/593962721748?text=Hola,%20me%20interesa%20agendar%20una%20cita%20en%20Alma%20Libre%20Spa",
+  mapLink: "https://maps.app.goo.gl/9vrzBsmpJ6HDUQoe9", // Keep existing or update if user provides new one.
+  googleMapsId: "" // Placeholder if needed later
 };
 
 export const SERVICES: Service[] = [
   {
     id: '1',
-    name: "Masaje Relajante",
-    description: "Desconecta del estrés diario con movimientos suaves y rítmicos. Ideal para ansiedad y fatiga mental.",
-    price: 25,
+    name: "Masaje Terapéutico",
+    description: "Alivio profundo para dolores crónicos y tensión acumulada. Personalizado según tus necesidades físicas.",
+    price: 30,
     duration: "60 min",
-    image: "https://picsum.photos/id/65/800/600",
-    benefits: ["Reduce estrés", "Mejora el sueño", "Calma la ansiedad"]
+    image: "/images/masaje-terapeutico-relajante.jpg",
+    benefits: ["Alivio de dolor crónico", "Mejora la movilidad", " Atención personalizada"]
   },
   {
     id: '2',
-    name: "Liberación Miofascial",
-    description: "Técnica especializada para liberar restricciones en el tejido conectivo. Recupera tu movilidad y elimina dolor crónico.",
-    price: 30,
+    name: "Liberación Muscular Profunda",
+    description: "Técnica avanzada (Miofascial) para soltar restricciones en el tejido profundo. Ideal para contracturas severas.",
+    price: 35,
     duration: "60 min",
-    image: "https://picsum.photos/id/83/800/600",
-    benefits: ["Mejora postura", "Elimina nudos profundos", "Aumenta flexibilidad"]
+    image: "/images/liberacion-muscular-profunda.jpg",
+    benefits: ["Elimina nudos difíciles", "Restura la elasticidad", "Mejora postura"]
   },
   {
     id: '3',
     name: "Reflexología Podal",
-    description: "Estimulación de puntos específicos en los pies que conectan con órganos vitales para un equilibrio total.",
+    description: "Terapia de puntos de presión en los pies que restaura el equilibrio natural de tu cuerpo y órganos.",
     price: 25,
     duration: "45 min",
-    image: "https://picsum.photos/id/102/800/600",
-    benefits: ["Estimula circulación", "Equilibrio energético", "Relajación profunda"]
+    image: "/images/reflexologia-podal.png",
+    benefits: ["Estimula circulación", "Equilibrio energético", "Relajación total"]
   },
-  {
-    id: '4',
-    name: "Drenaje Linfático",
-    description: "Masaje suave que favorece la eliminación de líquidos y toxinas. Excelente post-operatorio o para retención de líquidos.",
-    price: 35,
-    duration: "60 min",
-    image: "https://picsum.photos/id/123/800/600",
-    benefits: ["Elimina toxinas", "Reduce inflamación", "Mejora sistema inmune"]
-  },
+
   {
     id: '5',
-    name: "Maderoterapia",
-    description: "Masaje vigoroso con instrumentos de madera para modelar la figura y combatir la celulitis.",
-    price: 30,
-    duration: "50 min",
-    image: "https://picsum.photos/id/145/800/600",
-    benefits: ["Tonifica piel", "Reduce medidas", "Combate celulitis"]
+    name: "Drenaje Linfático",
+    description: "Masaje suave que favorece la eliminación de líquidos y toxinas. Excelente para post-operatorio.",
+    price: 35,
+    duration: "60 min",
+    image: "/images/drenaje-linfatico.jpg",
+    benefits: ["Elimina toxinas", "Reduce inflamación", "Mejora sistema inmune"]
   },
   {
     id: '6',
     name: "Masaje Deportivo",
-    description: "Diseñado para prevenir y tratar lesiones musculares. Ideal antes o después de actividad física intensa.",
+    description: "Preparación y recuperación muscular para deportistas. Previene lesiones y mejora el rendimiento.",
     price: 30,
     duration: "60 min",
-    image: "https://picsum.photos/id/167/800/600",
-    benefits: ["Recuperación muscular", "Previene lesiones", "Mejora rendimiento"]
+    image: "/images/masaje-deportivo-descontracturante.jpg",
+    benefits: ["Recuperación muscular", "Previene lesiones", "Mayor rendimiento"]
+  },
+  {
+    id: '7',
+    name: "Masaje Corporativo",
+    description: "Llevamos bienestar a tu oficina. Pausas activas y masajes express para reducir el estrés de tu equipo.",
+    price: "Cotizar",
+    duration: "A medida",
+    image: "/images/masaje-corporativo.jpg",
+    benefits: ["Reduce estrés laboral", "Aumenta productividad", "Mejora clima laboral"]
   }
 ];
 

@@ -35,8 +35,52 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${playfair.variable} ${lato.variable}`}>
       <body className={`${lato.className} min-h-screen font-sans text-gray-800 bg-white selection:bg-brand-gold selection:text-white antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "HealthAndBeautyBusiness",
+              "name": "Alma Libre - Spa & Wellness",
+              "image": "https://picsum.photos/id/65/800/600",
+              "@id": "https://almalibrespa.com",
+              "url": "https://almalibrespa.com",
+              "telephone": "+593962721748",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "La Josefina, calle Principal Ambar y Pasaje Jade",
+                "addressLocality": "Carcelén, Quito",
+                "addressRegion": "Pichincha",
+                "postalCode": "170303",
+                "addressCountry": "EC"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -0.1025,
+                "longitude": -78.4800
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "19:00"
+                }
+              ],
+              "priceRange": "$$",
+              "servesCuisine": "Masajes Terapéuticos, Relax"
+            })
+          }}
+        />
         {children}
       </body>
-    </html>
+    </html >
   );
 }

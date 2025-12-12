@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
     <section id={SectionId.HOME} className="relative h-screen w-full overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img 
-          src="https://picsum.photos/id/431/1920/1080" 
-          alt="Relajación Spa" 
+        <img
+          src="/images/liberacion-muscular-profunda.jpg"
+          alt="Liberación Muscular Profunda y Masajes en Carcelén - Alma Libre Spa"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-green/80 to-brand-green/30"></div>
@@ -25,22 +25,22 @@ const Hero: React.FC = () => {
       <div className="relative h-full container mx-auto px-6 flex flex-col justify-center items-start text-left">
         <div className="max-w-2xl animate-fadeUp">
           <span className="inline-block py-1 px-3 border border-brand-lightGold text-brand-lightGold rounded-full mb-4 text-sm tracking-widest uppercase">
-            Quito - La Josefina
+            Quito - Carcelén | La Josefina
           </span>
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             {BUSINESS_INFO.slogan}
           </h1>
           <p className="font-sans text-xl text-brand-lightGold mb-8 max-w-lg">
-            Experiencias de bienestar con productos orgánicos y terapias avanzadas de liberación miofascial.
+            Tu refugio de paz en el norte de Quito. Especialistas en <strong>Liberación Muscular Profunda</strong>, <strong>Reflexología</strong> y terapias para el dolor.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button 
+            <button
               onClick={scrollToServices}
               className="bg-brand-gold text-brand-green font-bold px-8 py-4 rounded-full text-lg hover:bg-white transition-colors shadow-lg"
             >
               Ver Tratamientos
             </button>
-            <a 
+            <a
               href={BUSINESS_INFO.whatsappLink}
               target="_blank"
               rel="noreferrer"
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Decorative Wave at Bottom */}
       <div className="absolute bottom-0 left-0 w-full leading-none">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-auto">

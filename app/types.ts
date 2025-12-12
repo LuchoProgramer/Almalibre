@@ -2,7 +2,7 @@ export interface Service {
   id: string;
   name: string;
   description: string;
-  price: number;
+  price: number | string;
   duration: string;
   image: string;
   benefits: string[];

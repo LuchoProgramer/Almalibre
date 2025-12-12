@@ -13,56 +13,68 @@ const About: React.FC = () => {
     },
     {
       icon: <Award className="w-8 h-8 text-brand-green" />,
-      title: "Técnica Especializada",
-      desc: "Expertas en liberación miofascial para tratar el dolor desde la raíz, no solo el síntoma."
+      title: "Profesionales Certificados",
+      desc: "Terapeutas certificados en Liberación Muscular y técnicas de relajación profunda."
     },
     {
       icon: <Heart className="w-8 h-8 text-brand-green" />,
-      title: "Atención Personalizada",
-      desc: "Cada cuerpo es único. Adaptamos la presión y la técnica a tus necesidades."
+      title: "Ambiente y Comodidad",
+      desc: "Un espacio diseñado para tu paz mental, con la máxima privacidad y confort."
     }
   ];
 
   return (
-    <section id={SectionId.ABOUT} className="py-20 bg-brand-green text-white">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          
+    <section id={SectionId.ABOUT} className="py-20 bg-brand-green text-white relative overflow-hidden">
+      {/* Decorative background element */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-gold/5 blur-3xl rounded-full transform translate-x-1/2"></div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+
+          {/* Storytelling Content */}
           <div className="lg:w-1/2">
-            <h2 className="font-serif text-4xl font-bold text-brand-lightGold mb-6">
-              Más que un masaje, <br/>un ritual de sanación.
+            <span className="inline-block text-brand-gold font-bold tracking-widest uppercase mb-2 text-sm">
+              Nuestra Esencia
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-lightGold mb-8 leading-tight">
+              Manos expertas, <br />corazón compasivo.
             </h2>
-            <p className="text-gray-200 text-lg mb-6 leading-relaxed">
-              En <span className="font-bold text-brand-gold">Alma Libre</span>, entendemos que el estrés de la vida moderna en Quito se acumula en el cuerpo. 
-              Ubicados en la tranquilidad de La Josefina, hemos creado un refugio donde el tiempo se detiene.
-            </p>
-            <p className="text-gray-200 text-lg mb-8 leading-relaxed">
-              Nuestra fundadora combina técnicas orientales con la ciencia moderna de la liberación de fascias para ofrecer resultados reales a oficinistas, deportistas y cualquiera que busque paz.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center md:text-left">
-                <span className="block text-4xl font-serif font-bold text-brand-gold">500+</span>
-                <span className="text-sm text-gray-300">Clientes Felices</span>
-              </div>
-              <div className="text-center md:text-left">
-                <span className="block text-4xl font-serif font-bold text-brand-gold">100%</span>
-                <span className="text-sm text-gray-300">Orgánico</span>
+
+            <div className="prose prose-lg text-gray-200 mb-8">
+              <p className="mb-4">
+                Detrás de <span className="text-brand-gold font-semibold">Alma Libre</span> no hay una franquicia impersonal, sino una vocación de vida. Entiendo que cada tensión en tu espalda cuenta una historia de estrés no liberado.
+              </p>
+              <p>
+                Mi formación certificada en <strong>Liberación Muscular Profunda</strong> y terapias orientales no es solo técnica; es la promesa de que estás en manos seguras. En <span className="text-brand-lightGold">La Josefina</span>, he construido el espacio que yo misma deseaba encontrar: privado, profesional y profundamente reparador.
+              </p>
+            </div>
+
+            {/* Certifications Badge */}
+            <div className="flex items-center gap-4 bg-white/5 p-4 rounded-lg border border-white/10 max-w-md backdrop-blur-sm">
+              <Award className="w-10 h-10 text-brand-gold shrink-0" />
+              <div>
+                <p className="font-serif text-lg font-bold text-white leading-none mb-1">Certificación Profesional</p>
+                <p className="text-sm text-gray-400">Avalada en técnicas terapéuticas avanzadas.</p>
               </div>
             </div>
           </div>
 
-          <div className="lg:w-1/2 grid gap-6">
-            {features.map((f, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl flex items-start gap-4 hover:bg-white/20 transition-colors">
-                <div className="bg-brand-lightGold p-3 rounded-full shrink-0">
-                  {f.icon}
-                </div>
+          {/* Visual Trust Signal */}
+          <div className="lg:w-1/2 relative group">
+            <div className="absolute inset-0 bg-brand-gold/20 transform translate-x-4 translate-y-4 rounded-2xl transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-white">
+              <img
+                src="/images/certificado-alma-libre-spa.png"
+                alt="Certificado Profesional de Terapeuta - Alma Libre Spa Carcelén"
+                className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                 <div>
-                  <h3 className="font-serif text-xl font-bold text-brand-lightGold mb-2">{f.title}</h3>
-                  <p className="text-gray-200 text-sm">{f.desc}</p>
+                  <p className="text-brand-gold font-bold text-lg mb-1">Tu bienestar es serio</p>
+                  <p className="text-white text-sm">Confía tu salud solo a profesionales capacitados.</p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
 
         </div>
