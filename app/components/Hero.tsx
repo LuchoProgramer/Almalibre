@@ -25,13 +25,13 @@ const Hero: React.FC = () => {
       <div className="relative h-full container mx-auto px-6 flex flex-col justify-center items-start text-left">
         <div className="max-w-2xl animate-fadeUp">
           <span className="inline-block py-1 px-3 border border-brand-lightGold text-brand-lightGold rounded-full mb-4 text-sm tracking-widest uppercase">
-            Quito - Carcelén | La Josefina
+            Quito Norte · Centro · Sur
           </span>
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            {BUSINESS_INFO.slogan}
+            Libera el dolor, recupera tu movilidad
           </h1>
-          <p className="font-sans text-xl text-brand-lightGold mb-8 max-w-lg">
-            Tu refugio de paz en el norte de Quito. Especialistas en <strong>Liberación Muscular Profunda</strong>, <strong>Reflexología</strong> y terapias para el dolor.
+          <p className="font-sans text-xl md:text-2xl text-brand-lightGold mb-8 max-w-2xl font-semibold">
+            Terapia de masajes especializados, reflexología y liberación miofascial profunda en Quito
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button

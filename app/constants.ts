@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
     id: '2',
     name: "Liberación Muscular Profunda",
     description: "Técnica avanzada (Miofascial) para soltar restricciones en el tejido profundo. Ideal para contracturas severas.",
-    price: 35,
+    price: 45,
     duration: "60 min",
     image: "/images/liberacion-muscular-profunda.jpg",
     benefits: ["Elimina nudos difíciles", "Restura la elasticidad", "Mejora postura"]
@@ -53,7 +53,7 @@ export const SERVICES: Service[] = [
     id: '6',
     name: "Masaje Deportivo",
     description: "Preparación y recuperación muscular para deportistas. Previene lesiones y mejora el rendimiento.",
-    price: 30,
+    price: 35,
     duration: "60 min",
     image: "/images/masaje-deportivo-descontracturante.jpg",
     benefits: ["Recuperación muscular", "Previene lesiones", "Mayor rendimiento"]
